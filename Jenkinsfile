@@ -1,20 +1,12 @@
 pipeline {
   agent any
-  stages {
-    stage('echo') {
+  
+  stages { 
+    stage ('echo') {
       steps {
-        echo 'hello from the trigger'
+        echo "Namaste"
       }
     }
-
-    stage('Another echo') {
-      steps {
-        sleep 3
-      }
-    }
-
   }
-  triggers {
-    cron('H/15 * * * *')
-  }
+  
 }
