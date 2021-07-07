@@ -8,6 +8,7 @@ pipeline {
       steps {
         echo "Namaste"
 	echo "IS polling working"
+	echo "Seems it worked"
       }
     }
   }
