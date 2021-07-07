@@ -8,6 +8,9 @@ pipeline {
       steps {
         echo "Namaste"
       }
+      steps {
+        echo "OCSGKNN"
+      }
     }
   }
   
