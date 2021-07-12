@@ -1,17 +1,13 @@
 pipeline {
-  agent {
-    label "master"
-  }
-  triggers {
- cron('* * * * *')
- }
-  
+  agent any
+	trigger {
+	   githubpush()
+	} 
+ 
   stages { 
-    stage ('echo') {
+    stage ('Production branch echo') {
       steps {
         echo "Namaste"
-	echo "IS polling working"
-	echo "Seems it worked"
       }
     }
   }
